@@ -33,13 +33,10 @@ class CategoryViewController: BaseViewController, CategoryView {
         setupViewTitle()
         setupBottomPanelView()
         setupTableView()
+        prepareTableView()
         presenter?.loadCategory()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        prepareTableView()
-    }
     
     //MARK:- Setup View
     private func setupViewTitle(){
@@ -131,7 +128,4 @@ class CategoryViewController: BaseViewController, CategoryView {
         }
         
     }
-    
 }
-
-
