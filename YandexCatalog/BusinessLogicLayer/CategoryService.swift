@@ -35,6 +35,8 @@ class CategoryService : CategoryServiceProtocol{
      */
     func categories() -> Observable<Result<[Category]?, Error>> {
         let network = self.networkService.getCategory().observeOn(MainScheduler.instance)
+            
+        
         
         return repository.fetchAllByParent(nil)
             .flatMap{ category -> Observable<Result<[Category]?, Error>> in
@@ -45,6 +47,7 @@ class CategoryService : CategoryServiceProtocol{
                 }
         }
     }
+    
     
     /*
      В объектах Category и CategoryObject указывается название родителя.
@@ -70,7 +73,7 @@ class CategoryService : CategoryServiceProtocol{
     /*
      Сохраняем все категории в Realm
      */
-    private func saveCategory(_ result:Result<[Category]?, Error>) -> Observable<Result<[Category]?, Error>>{
+    private func saveCategory(_ result:Result<[Category], Error>) -> Observable<Result<[Category], Error>>{
         guard let list = checkResult(result) else { return Observable.just(Result.failure(RequestError.unknown))}
         let category = prepareCategory(category: list)
         return repository.save(items: category)

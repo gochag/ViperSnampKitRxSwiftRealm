@@ -37,6 +37,7 @@
 		40B166F0252E1659000E651E /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B166EF252E1659000E651E /* Repository.swift */; };
 		40B166F6252F116E000E651E /* RealmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B166F5252F116E000E651E /* RealmRepository.swift */; };
 		40B166F8252F12E9000E651E /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B166F7252F12E9000E651E /* Entity.swift */; };
+		40B249DC2532069D00A44B83 /* CatalogServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B249DB2532069D00A44B83 /* CatalogServiceTest.swift */; };
 		40C52FAA25305071003EFD47 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C52FA925305071003EFD47 /* CategoryService.swift */; };
 		8A983F6ED3B6903380C4A92A /* Pods_YandexCatalogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009ABD65FFD19A704E1ED6B7 /* Pods_YandexCatalogTests.framework */; };
 		EBAD6A7DA49969F32C4AE80D /* Pods_YandexCatalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7227FA7F4968F249B0AD72 /* Pods_YandexCatalog.framework */; };
@@ -44,6 +45,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		40B166BA252CC937000E651E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40B1669B252CC935000E651E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40B166A2252CC935000E651E;
+			remoteInfo = YandexCatalog;
+		};
+		40B249DE2532069D00A44B83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 40B1669B252CC935000E651E /* Project object */;
 			proxyType = 1;
@@ -89,6 +97,9 @@
 		40B166EF252E1659000E651E /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		40B166F5252F116E000E651E /* RealmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepository.swift; sourceTree = "<group>"; };
 		40B166F7252F12E9000E651E /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		40B249D92532069D00A44B83 /* CatalogServiceTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogServiceTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40B249DB2532069D00A44B83 /* CatalogServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogServiceTest.swift; sourceTree = "<group>"; };
+		40B249DD2532069D00A44B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40C52FA925305071003EFD47 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
 		4F7227FA7F4968F249B0AD72 /* Pods_YandexCatalog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YandexCatalog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		836FA6413FFCA4C2CDE23F04 /* Pods-YandexCatalogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YandexCatalogTests.debug.xcconfig"; path = "Target Support Files/Pods-YandexCatalogTests/Pods-YandexCatalogTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +121,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A983F6ED3B6903380C4A92A /* Pods_YandexCatalogTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40B249D62532069D00A44B83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +202,7 @@
 			children = (
 				40B166A5252CC935000E651E /* YandexCatalog */,
 				40B166BC252CC937000E651E /* YandexCatalogTests */,
+				40B249DA2532069D00A44B83 /* CatalogServiceTest */,
 				40B166A4252CC935000E651E /* Products */,
 				B2AB6AC8B8E3451BE38314C4 /* Pods */,
 				059B1B8CBDAB864DE712A20E /* Frameworks */,
@@ -195,6 +214,7 @@
 			children = (
 				40B166A3252CC935000E651E /* YandexCatalog.app */,
 				40B166B9252CC937000E651E /* YandexCatalogTests.xctest */,
+				40B249D92532069D00A44B83 /* CatalogServiceTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -352,6 +372,15 @@
 			path = AppLayer;
 			sourceTree = "<group>";
 		};
+		40B249DA2532069D00A44B83 /* CatalogServiceTest */ = {
+			isa = PBXGroup;
+			children = (
+				40B249DB2532069D00A44B83 /* CatalogServiceTest.swift */,
+				40B249DD2532069D00A44B83 /* Info.plist */,
+			);
+			path = CatalogServiceTest;
+			sourceTree = "<group>";
+		};
 		B2AB6AC8B8E3451BE38314C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +433,24 @@
 			productReference = 40B166B9252CC937000E651E /* YandexCatalogTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		40B249D82532069D00A44B83 /* CatalogServiceTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40B249E22532069D00A44B83 /* Build configuration list for PBXNativeTarget "CatalogServiceTest" */;
+			buildPhases = (
+				40B249D52532069D00A44B83 /* Sources */,
+				40B249D62532069D00A44B83 /* Frameworks */,
+				40B249D72532069D00A44B83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40B249DF2532069D00A44B83 /* PBXTargetDependency */,
+			);
+			name = CatalogServiceTest;
+			productName = CatalogServiceTest;
+			productReference = 40B249D92532069D00A44B83 /* CatalogServiceTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -418,6 +465,10 @@
 						CreatedOnToolsVersion = 11.0;
 					};
 					40B166B8252CC937000E651E = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 40B166A2252CC935000E651E;
+					};
+					40B249D82532069D00A44B83 = {
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = 40B166A2252CC935000E651E;
 					};
@@ -438,6 +489,7 @@
 			targets = (
 				40B166A2252CC935000E651E /* YandexCatalog */,
 				40B166B8252CC937000E651E /* YandexCatalogTests */,
+				40B249D82532069D00A44B83 /* CatalogServiceTest */,
 			);
 		};
 /* End PBXProject section */
@@ -455,6 +507,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		40B166B7252CC937000E651E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40B249D72532069D00A44B83 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -569,6 +628,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40B249D52532069D00A44B83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B249DC2532069D00A44B83 /* CatalogServiceTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -576,6 +643,11 @@
 			isa = PBXTargetDependency;
 			target = 40B166A2252CC935000E651E /* YandexCatalog */;
 			targetProxy = 40B166BA252CC937000E651E /* PBXContainerItemProxy */;
+		};
+		40B249DF2532069D00A44B83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40B166A2252CC935000E651E /* YandexCatalog */;
+			targetProxy = 40B249DE2532069D00A44B83 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -797,6 +869,46 @@
 			};
 			name = Release;
 		};
+		40B249E02532069D00A44B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZTSN9C79Q;
+				INFOPLIST_FILE = CatalogServiceTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gochag.app.CatalogServiceTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YandexCatalog.app/YandexCatalog";
+			};
+			name = Debug;
+		};
+		40B249E12532069D00A44B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZTSN9C79Q;
+				INFOPLIST_FILE = CatalogServiceTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gochag.app.CatalogServiceTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YandexCatalog.app/YandexCatalog";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -823,6 +935,15 @@
 			buildConfigurations = (
 				40B166C6252CC937000E651E /* Debug */,
 				40B166C7252CC937000E651E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40B249E22532069D00A44B83 /* Build configuration list for PBXNativeTarget "CatalogServiceTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40B249E02532069D00A44B83 /* Debug */,
+				40B249E12532069D00A44B83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

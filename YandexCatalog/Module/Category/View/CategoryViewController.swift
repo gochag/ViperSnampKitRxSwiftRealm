@@ -65,8 +65,7 @@ class CategoryViewController: BaseViewController, CategoryView {
     private func prepareTableView(){
         /* Тут создаю TableView */
           categoryVariable.asObservable()
-              .bind(to: tableView.rx.items(cellIdentifier: CategoryCell.id)){row,item,cell in
-                  let cell = cell as! CategoryCell
+            .bind(to: tableView.rx.items(cellIdentifier: CategoryCell.id)){row,item,cell in
                   cell.updateTitle(category:item)
           }.disposed(by: disposeBag)
           
